@@ -2,11 +2,11 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.kealper.WhatWhitelist</groupId>
     <artifactId>WhatWhitelist</artifactId>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.5</maven.compiler.source>
-        <maven.compiler.target>1.5</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
     <build>
     	<sourceDirectory>${basedir}/src/main/</sourceDirectory>
@@ -20,15 +20,24 @@
     </build>
     <repositories>
         <repository>
-            <id>bukkit-repo</id>
+            <id>spigot-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+        </repository>
+        <repository>
+            <id>vault-repo</id>
+            <url>https://nexus.theyeticave.net/content/repositories/pub_releases</url>
         </repository>
     </repositories>
     <dependencies>
         <dependency>
-            <groupId>org.bukkit</groupId>
-            <artifactId>bukkit</artifactId>
-            <version>1.10-R0.1-SNAPSHOT</version>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <version>1.17.1-R0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>net.milkbowl.vault</groupId>
+            <artifactId>VaultAPI</artifactId>
+            <version>1.7</version>
         </dependency>
     </dependencies>
 	<profiles>

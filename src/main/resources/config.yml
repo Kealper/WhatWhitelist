@@ -1,0 +1,7 @@
+# If set to true, WhatWhitelist will issue a "whitelist off" command every time
+# a "whitelist on" command is issued either in-game or into the server console.
+# If you need to temporarily bypass this while enabled, you can toggle this on
+# or off with the "/whatwhitelist toggle" command which does not save and only
+# applies until the server is restarted, or by prefixing the regular whitelist
+# command with the "minecraft" namespace, like this: /minecraft:whitelist on
+whitelistingDisabled: true

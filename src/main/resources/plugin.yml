@@ -1,4 +1,9 @@
 name: WhatWhitelist
 main: com.kealper.WhatWhitelist.WhatWhitelist
 authors: [Kealper]
-version: 1.0.0
+version: 1.1.0
+depend: [Vault]
+api-version: 1.17
+commands:
+    whatwhitelist:
+        description: Manage WhatWhitelist options
